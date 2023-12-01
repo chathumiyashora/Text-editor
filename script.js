@@ -9,3 +9,10 @@ document.getElementById('fontColorPicker').addEventListener('input', function() 
 function applyAlignment(align) {
     document.getElementById('editor').style.textAlign = align;
 }
+function undo() {
+    document.execCommand('undo', false, null);
+}
+
+function redo() {
+    document.execCommand('redo', false, null);
+}
